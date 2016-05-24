@@ -104,7 +104,7 @@ if 'username' in form and 'password' in form:
         #    body+= each+":"+c[each].value+"<br>"
 
         #attach a link:
-        body+='<a href="mainpage.py">Go To Main Page</a><br>'
+        body+='<a href="mainpage.py?username=' + username + '">Go To Main Page</a><br>'
     else:
         body += "Failed to authenticate"
 else:
